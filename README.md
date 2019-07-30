@@ -10,14 +10,19 @@ Build confirmed on:
 ```bash
 Raspberri pi3b+ - Linux version 4.19.58-v7+ armv7l, running Raspbian dist upgraded to BUSTER
 ```
-## Simple installation ##
+## Simple pre-built installation (for latest buster kernel as of 7/29/2019) ##
 
 ```bash
+insmod 8812bu.ko
+```
+
+## Simple build instructions (on RPI) ##
+```bash
+
 cd rtl88x2BU_WiFi_linux_v5.3.1_27678.20180430_COEX20180427-5959
 make
 sudo make install
 
-insmod 8812bu.ko
 ```
 
 ## DKMS installation
